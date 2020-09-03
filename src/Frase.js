@@ -3,16 +3,16 @@ import styled from '@emotion/styled';
 
 //----------------------------------------------
 const ContenedorFrase = styled.div`
-  padding: 1.2 rem;
+  padding: .9 rem;
   border-radius: .72rem;
   /* background: -webkit-linear-gradient(top left, #154F3C 0%, 
   #007D35 40%, #0F574E 100%); */
-  background-size: 100rem;
+  /* background-size: 100rem; */
   border: solid 1px #154F3C;
 
   @media (min-width: 45%){
     margin-top: .9rem;
-    max-width: 72%;
+    max-width: 90%;
   }
   h1 {
     font-family: Arial, Helvetica, sans-serif;
