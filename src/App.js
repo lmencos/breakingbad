@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import Frase from './Frase';
 
@@ -21,6 +21,12 @@ const Boton = styled.button`
   margin-top: 1rem;
   font-size: 1.5rem;
   border: 1px solid black;
+  transition: background-size .6s ease;
+
+  :hover{
+    cursor: pointer;
+    background-size: 400px;
+  }
 `;
 
 //--------------------------------------------------------
@@ -37,6 +43,11 @@ function App() {
     guardarFrase(frase[0]);
   };
 
+  //Cargar una frase
+  useEffect( () => {
+    consultarAPI()
+  }, [] )
+
   return (
     
       <div className="App">
@@ -47,7 +58,7 @@ function App() {
           <Boton
             onClick={consultarAPI}
           >
-            Obtener frase
+            Get another phrase
           </Boton>
         </Contenedor>
       </div>

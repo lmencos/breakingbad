@@ -16,15 +16,15 @@ const ContenedorFrase = styled.div`
   }
   h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     position: relative;
-    padding: .9rem;
+    padding: .3rem;
     color: #14463C;
 
     &::before {
       /* content: open-quote; */
-      font-size: 3rem;
+      font-size: 2.1rem;
       color: #154F3C;
       position: absolute;
       left: -2rem;
@@ -33,11 +33,11 @@ const ContenedorFrase = styled.div`
   }
   p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     color: #154f3C;
-    margin-top: .3rem;
+    margin-top: .21rem;
   }
 `;
 
